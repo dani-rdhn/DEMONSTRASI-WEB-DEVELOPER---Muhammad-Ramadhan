@@ -25,7 +25,7 @@
                            <li><a href="#">About</a></li>
                            <li><a href="#">Services</a></li>
                            <li><a href="#">Testimonial</a></li>
-                           <li><a href="#">Blog</a></li>
+                           <li><a href="#">article</a></li>
                            <li><a href="#">Contact</a></li>
                         </ul>
                      </div>
