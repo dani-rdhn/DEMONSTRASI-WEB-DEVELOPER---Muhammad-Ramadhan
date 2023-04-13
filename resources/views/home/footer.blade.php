@@ -70,6 +70,6 @@
       </footer>
       <!-- footer end -->
       <div class="cpy_">
-         <p class="mx-auto">© 2023 All Rights Reserved By Kelompok 4 RPL SI4407</a><br>
+         <p class="mx-auto">© 2023 All Rights Reserved By Kelompok D-261 RPL SI4407</a><br>
          </p>
       </div>
