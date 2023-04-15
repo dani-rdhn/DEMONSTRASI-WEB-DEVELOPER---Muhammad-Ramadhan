@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Threadly Admin</title>
     <!-- Required meta tags -->
     @include('admin.css')
   </head>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Threadly Admin</title>
     <!-- Required meta tags -->
     @include('admin.css')
     <style type="text/css">
@@ -14,7 +15,7 @@
         {
             font-family: montserrat;
             font-weight: bold;
-            font-size: 28px;
+            font-size: 32px;
             padding-bottom: 40px;
         }
         .input_color
