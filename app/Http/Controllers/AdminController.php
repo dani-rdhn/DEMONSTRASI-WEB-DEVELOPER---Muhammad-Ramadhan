@@ -51,6 +51,7 @@ class AdminController extends Controller
             $product->image=$imagename;
             $product->save();
         
-        return redirect('/view_product');
+        // return redirect('/view_product');
+        return redirect()->back()->with('message', 'Product Added Successfully');
     }
 }
