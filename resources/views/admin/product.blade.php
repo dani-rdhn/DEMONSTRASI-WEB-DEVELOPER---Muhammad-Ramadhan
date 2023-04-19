@@ -24,6 +24,19 @@
             color: black;
             padding-bottom: 8px;
         }
+        /* .container 
+        {
+          color: black;
+        } */
+        .form-control {
+          color: #333;
+          background-color: #fff;
+        }
+        .form-control:focus {
+          background-color: #fff !important;
+          color: #333;
+          box-shadow: none;
+        }
     </style>
 
   </head>
