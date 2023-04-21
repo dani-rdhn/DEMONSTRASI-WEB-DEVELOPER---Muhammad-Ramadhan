@@ -1,4 +1,4 @@
-<section class="product_section layout_padding">
+<!-- <section class="product_section layout_padding">
          <div class="container">
             <div class="heading_container heading_center">
                <h2>
@@ -313,4 +313,4 @@
                </a>
             </div>
          </div>
-      </section>
+      </section> -->

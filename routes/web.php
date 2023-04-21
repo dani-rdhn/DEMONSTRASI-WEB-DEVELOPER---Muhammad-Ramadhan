@@ -21,7 +21,9 @@ use app\Http\Controllers\AdminController;
 Route::get('/', 'App\Http\Controllers\HomeController@index');
 
 // Route::get('/article', [articlecontroller::class, 'index']); 
+// Route::get('/article', [articlecontroller::class, 'index']); 
 Route::get('/article', 'App\Http\Controllers\articlecontroller@index');
+Route::get('/product-page', 'App\Http\Controllers\HomeController@product');
 
 // Route::get('/redirect', [HomeController::class, 'redirect']); 
 Route::get('/home', 'App\Http\Controllers\articlecontroller@home');
@@ -44,4 +46,5 @@ Route::post('/add_category', 'App\Http\Controllers\AdminController@add_category'
 Route::get('/delete_category/{id}', 'App\Http\Controllers\AdminController@delete_category');
 Route::get('/view_product', 'App\Http\Controllers\AdminController@view_product');
 Route::post('/add_product', 'App\Http\Controllers\AdminController@add_product');
+Route::get('/product_details/{id}', 'App\Http\Controllers\HomeController@product_details');
 
