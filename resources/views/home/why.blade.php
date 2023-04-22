@@ -97,10 +97,10 @@
                      </div>
                      <div class="detail-box">
                         <h5>
-                           Fast Delivery
+                           Local industry
                         </h5>
                         <p>
-                           variations of passages of Lorem Ipsum available
+                           We partner with local designers and manufacturers to provide a platform for them to showcase their products to a wider audience
                         </p>
                      </div>
                   </div>
@@ -212,10 +212,10 @@
                      </div>
                      <div class="detail-box">
                         <h5>
-                           Free Shiping
+                           Sustainability
                         </h5>
                         <p>
-                           variations of passages of Lorem Ipsum available
+                           Promoting sustainable fashion practices by featuring local brands that prioritize ethical and environmentally friendly manufacturing processes.
                         </p>
                      </div>
                   </div>
@@ -233,10 +233,10 @@
                      </div>
                      <div class="detail-box">
                         <h5>
-                           Best Quality
+                           Unique and authentic products
                         </h5>
                         <p>
-                           variations of passages of Lorem Ipsum available
+                           Discovering unique and authentic fashion items that will make you stand out from the crowd.
                         </p>
                      </div>
                   </div>

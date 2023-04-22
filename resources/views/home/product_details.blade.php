@@ -29,62 +29,68 @@
          <!-- end header section -->
 
          <main class="main">
-      <section class="product-wrapper">
-        <div class="container">
-          <div class="product-images-wrapper">
-            <div class="preview-image-wrapper">
-              <img
-                src="product/{{$product->image}}"
-                class="preview-image"
-                alt="Product Image"
-              />
-              <div class="arrows hide-for-desktop">
-                <div class="next">
-                  <img src="home/images/icon-next.svg" alt="Next Icon" />
+          <section class="product-wrapper">
+            <div class="container">
+              <div class="product-images-wrapper">
+                <div class="preview-image-wrapper">
+                  <img
+                    src="product/{{$product->image}}"
+                    class="preview-image"
+                    alt="Product Image"
+                  />
+                  <div class="arrows hide-for-desktop">
+                    <div class="next">
+                      <img src="home/images/icon-next.svg" alt="Next Icon" />
+                    </div>
+                    <div class="prev">
+                      <img src="home/images/icon-previous.svg" alt="Previous Icon" />
+                    </div>
+                  </div>
+                  <div class="count">
+                    <p>
+                      <span class="current"></span> of
+                      <span class="total"></span>
+                    </p>
+                  </div>
                 </div>
-                <div class="prev">
-                  <img src="home/images/icon-previous.svg" alt="Previous Icon" />
-                </div>
+
               </div>
-              <div class="count">
-                <p>
-                  <span class="current"></span> of
-                  <span class="total"></span>
+              <div class="product-details-wrapper">
+                <p class="product-brabd">Threadly</p>
+                <h1 class="product-title">{{$product->title}}</h1>
+                <p class="product-description">
+                  {{$product->description}}
                 </p>
+
+                <div class="product-price">
+                  <div class="current-price-wrapper">
+                    <h2 class="current-price">Rp{{$product->price}}</h2>
+                  </div>
+                </div>
+
+                
+                <form action="{{url('add_cart', $product->id)}}" class="add-to-cart-form" style="margin-top:12px; margin-left:-12px" method="post">
+                  @csrf
+                  <div class="col-md-2" style="margin-top:22px">
+                    <input type="number" name="quantity" value="1" min="1">
+                  </div>
+
+                  <button
+                    type="submit"
+                    aria-label="Add to cart"
+                    class="button add-btn"
+                  >
+                    <img src="home/images/icon-cart.svg" alt="" />
+                    Add to cart
+                  </button>
+
+                  <p class="form-alert"></p>
+                </form>
+                
               </div>
             </div>
-
-          </div>
-          <div class="product-details-wrapper">
-            <p class="product-brabd">Threadly</p>
-            <h1 class="product-title">{{$product->title}}</h1>
-            <p class="product-description">
-              {{$product->description}}
-            </p>
-
-            <div class="product-price">
-              <div class="current-price-wrapper">
-                <h2 class="current-price">Rp{{$product->price}}</h2>
-              </div>
-            </div>
-
-            <form action="#" class="add-to-cart-form">
-              
-              <button
-                type="submit"
-                aria-label="Add to cart"
-                class="button add-btn"
-              >
-                <img src="home/images/icon-cart.svg" alt="" />
-                Add to cart
-              </button>
-
-              <p class="form-alert"></p>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
+          </section>
+        </main>
 
 
       </div>
@@ -106,6 +112,6 @@
     </div>
     <!-- Overlay -->
     <div class="overlay"></div>
-    <script src="./js/main.js"></script>
+    <script src="home/js/main.js"></script>
    </body>
 </html>
