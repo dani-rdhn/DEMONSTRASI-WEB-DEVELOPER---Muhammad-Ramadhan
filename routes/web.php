@@ -22,7 +22,8 @@ Route::get('/', 'App\Http\Controllers\HomeController@index');
 
 // Route::get('/article', [articlecontroller::class, 'index']); 
 // Route::get('/article', [articlecontroller::class, 'index']); 
-Route::get('/article', 'App\Http\Controllers\articlecontroller@index');
+// Route::get('/article', 'App\Http\Controllers\articlecontroller@index');
+Route::get('/article', 'App\Http\Controllers\articlecontroller@article');
 Route::get('/product-page', 'App\Http\Controllers\HomeController@product');
 
 // Route::get('/redirect', [HomeController::class, 'redirect']); 
@@ -50,4 +51,5 @@ Route::get('/product_details/{id}', 'App\Http\Controllers\HomeController@product
 Route::post('/add_cart/{id}', 'App\Http\Controllers\HomeController@add_cart');
 Route::get('/show_cart', 'App\Http\Controllers\HomeController@show_cart');
 Route::get('/remove_cart/{id}', 'App\Http\Controllers\HomeController@remove_cart');
+Route::get('/order', 'App\Http\Controllers\HomeController@order');
 

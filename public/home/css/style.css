@@ -131,7 +131,7 @@ a:focus {
 }
 
 .navbar-brand {
-    font-family: "Playfair Display", serif;
+    font-family: "Montserrat", serif;
 }
 
 .navbar-brand span {
@@ -813,7 +813,7 @@ a:focus {
 .footer_section .footer-logo {
     font-weight: 600;
     margin-bottom: 20px;
-    font-family: "Playfair Display", serif;
+    font-family: "Montserrat", serif;
     text-align: left;
 }
 
@@ -931,7 +931,7 @@ a:focus {
     margin-bottom: 15px;
     font-size: 2.5rem;
     font-weight: bold;
-    font-family: "Playfair Display", serif;
+    font-family: "Montserrat", serif;
 }
 
 li.nav-item ul {

@@ -14,4 +14,8 @@ class articlecontroller extends Controller
     {
         return view('home.userpage');
     }
+    public function article() 
+    {
+        return view('home.article');
+    }
 }

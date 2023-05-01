@@ -21,7 +21,8 @@
                            <a class="nav-link" href="/product-page">Products</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="/article">Blog</a>
+                           <a class="nav-link" href="/article">Article</a>
+                           <!-- <a class="nav-link" href="/article">Blog</a> -->
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" href="contact.html">Contact</a>
