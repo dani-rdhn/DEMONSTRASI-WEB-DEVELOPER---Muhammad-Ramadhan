@@ -131,4 +131,19 @@ class HomeController extends Controller
 
         return redirect()->back();
     }
+
+     public function checkout()
+    {
+        if (Auth::id())
+        {
+            // $id=Auth::user()->id;
+            // $cart=cart::where('user_id','=',$id)->get();
+            return view('home.checkout');
+        }
+        else
+        {
+            return redirect('login');
+        }
+        
+    }
 }
