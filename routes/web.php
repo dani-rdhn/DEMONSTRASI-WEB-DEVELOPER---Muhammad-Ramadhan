@@ -53,4 +53,8 @@ Route::post('/add_cart/{id}', 'App\Http\Controllers\HomeController@add_cart');
 Route::get('/show_cart', 'App\Http\Controllers\HomeController@show_cart');
 Route::get('/remove_cart/{id}', 'App\Http\Controllers\HomeController@remove_cart');
 Route::get('/order', 'App\Http\Controllers\HomeController@order');
+// Route::get('/stripe_order', 'App\Http\Controllers\HomeController@stripe_order');
+Route::get('/stripe/{totalprice}', 'App\Http\Controllers\HomeController@stripe');
+
+Route::post('stripe/{totalprice}', 'App\Http\Controllers\HomeController@stripePost')->name('stripe.post');
 

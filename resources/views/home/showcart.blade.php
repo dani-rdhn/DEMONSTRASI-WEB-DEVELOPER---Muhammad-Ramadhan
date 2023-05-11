@@ -36,6 +36,7 @@
                <div class="d-flex justify-content-between align-items-center mb-4">
                   <p style="color: #1D7A1B; font-size: 32px">Shopping Cart</p>
                </div>
+               <?php $totalprice=0; ?>
                @foreach($cart as $cart)
                <div class="card rounded-3 mb-4">
                   <div class="card-body p-4">
@@ -58,13 +59,30 @@
                      </div>
                   </div>
                </div>
+               <?php $totalprice=$totalprice + $cart->price ?>
                @endforeach
                <div class="card">
                   <div class="card-body">
-                     <a href="{{url('order')}}"><button type="button" class="btn btn-warning btn-block btn-lg">Proceed to Pay</button></a>
+                     <p>Total Price : Rp{{$totalprice}}</p>
                   </div>
                </div>
-
+               <!-- <div class="card">
+                  <div class="card-body">
+                     <a href="{{url('order', $totalprice)}}"><button type="button" class="btn btn-warning btn-lg">Proceed to Pay</button></a>
+                     <a href="{{url('order', $totalprice)}}"><button type="button" class="btn btn-warning btn-lg">Proceed to Pay</button></a>
+                  </div>
+               </div> -->
+               <div class="card">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-sm-6">
+                           <a href="{{url('order')}}"><button type="button" class="btn btn-block btn-warning btn-lg">Cash On Delivery</button></a>
+                        </div>
+                        <div class="col-sm-6">
+                           <a href="{{url('stripe', $totalprice)}}"><button type="button" class="btn btn-block btn-warning btn-lg">Payment With Card</button></a>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
