@@ -75,7 +75,7 @@
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="{{url('/view_product')}}">Add Products</a></li>
-                <li class="nav-item"> <a class="nav-link" href="">Show Products</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{url('/order')}}">Order</a></li>
               </ul>
             </div>
           </li>
@@ -87,7 +87,16 @@
               <span class="menu-title">Category</span>
             </a>
           </li>
+
           <li class="nav-item menu-items">
+            <a class="nav-link" href="{{url('order_product')}}">
+              <span class="menu-icon">
+                <i class="mdi mdi-playlist-play"></i>
+              </span>
+              <span class="menu-title">Order</span>
+            </a>
+          </li>
+          <!-- <li class="nav-item menu-items">
             <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
               <span class="menu-icon">
                 <i class="mdi mdi-security"></i>
@@ -104,6 +113,6 @@
                 <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
               </ul>
             </div>
-          </li>
+          </li> -->
         </ul>
       </nav>

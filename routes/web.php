@@ -48,6 +48,9 @@ Route::post('/add_category', 'App\Http\Controllers\AdminController@add_category'
 Route::get('/delete_category/{id}', 'App\Http\Controllers\AdminController@delete_category');
 Route::get('/view_product', 'App\Http\Controllers\AdminController@view_product');
 Route::post('/add_product', 'App\Http\Controllers\AdminController@add_product');
+// Route::get('/order', 'App\Http\Controllers\AdminController@order'); 
+Route::get('/order_product', 'App\Http\Controllers\AdminController@order_product');
+
 Route::get('/product_details/{id}', 'App\Http\Controllers\HomeController@product_details');
 Route::post('/add_cart/{id}', 'App\Http\Controllers\HomeController@add_cart');
 Route::get('/show_cart', 'App\Http\Controllers\HomeController@show_cart');
