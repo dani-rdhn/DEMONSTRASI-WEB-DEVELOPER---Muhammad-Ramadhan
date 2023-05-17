@@ -9,7 +9,7 @@
                <div class="col-md-4">
                   <div class="box ">
                      <div class="img-box">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                        <!-- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                            <g>
                               <g>
                                  <path d="M476.158,231.363l-13.259-53.035c3.625-0.77,6.345-3.986,6.345-7.839v-8.551c0-18.566-15.105-33.67-33.67-33.67h-60.392
@@ -93,7 +93,8 @@
                            </g>
                            <g>
                            </g>
-                        </svg>
+                        </svg> -->
+                        <img src="home/images/client.jpg" width="300" height="auto">
                      </div>
                      <div class="detail-box">
                         <h5>
