@@ -26,6 +26,16 @@ class HomeController extends Controller
         return view('home.userpage');
     }
 
+    // public function why() 
+    // {
+    //     return view('home.why');
+    // }
+
+    // public function client() 
+    // {
+    //     return view('home.client');
+    // }
+
     public function product() 
     {
         $product=Product::all();

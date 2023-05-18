@@ -1,11 +1,11 @@
 <section class="why_section layout_padding">
          <div class="container">
             <div class="heading_container heading_center">
-               <h2>
+               <h2 style="color: #002C3E;">
                   Why Shop With Us
                </h2>
             </div>
-            <div class="row">
+            <div class="row" style="font-family: Montserrat;">
                <div class="col-md-4">
                   <div class="box ">
                      <div class="img-box">
@@ -94,7 +94,7 @@
                            <g>
                            </g>
                         </svg> -->
-                        <img src="home/images/local.png" width="300" height="auto">
+                        <img src="home/images/local.png" width="280" height="auto">
                      </div>
                      <div class="detail-box">
                         <h5>

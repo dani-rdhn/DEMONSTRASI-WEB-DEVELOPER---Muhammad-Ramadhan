@@ -26,6 +26,8 @@ Route::get('/', 'App\Http\Controllers\HomeController@index');
 Route::get('/article', 'App\Http\Controllers\articlecontroller@article');
 Route::get('/checkout', 'App\Http\Controllers\HomeController@checkout');
 Route::get('/product-page', 'App\Http\Controllers\HomeController@product');
+Route::get('/about', 'App\Http\Controllers\HomeController@why');
+Route::get('/testimonial', 'App\Http\Controllers\HomeController@client');
 
 // Route::get('/redirect', [HomeController::class, 'redirect']); 
 Route::get('/home', 'App\Http\Controllers\articlecontroller@home');

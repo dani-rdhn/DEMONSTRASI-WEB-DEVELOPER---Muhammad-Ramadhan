@@ -1,7 +1,7 @@
 <section class="client_section layout_padding">
          <div class="container">
             <div class="heading_container heading_center">
-               <h2>
+               <h2 style="color: #002C3E;">
                   Customer's Testimonial
                </h2>
             </div>
