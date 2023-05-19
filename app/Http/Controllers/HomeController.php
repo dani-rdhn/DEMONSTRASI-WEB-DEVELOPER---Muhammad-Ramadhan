@@ -26,6 +26,7 @@ class HomeController extends Controller
         return view('home.userpage');
     }
 
+
     // public function why() 
     // {
     //     return view('home.why');
@@ -209,5 +210,21 @@ class HomeController extends Controller
         Session::flash('success', 'Payment successful!');
               
         return back();
+    }
+
+    public function order_history() 
+    {
+        if(Auth::id())
+        {
+            $user=Auth::user();
+            $userid=$user->id;
+            $order=order::where('user_id', '=', $userid)->get();
+            return view('home.order_history', compact('order'));
+        }
+        
+        else
+        {
+            return redirect('login');
+        }
     }
 }

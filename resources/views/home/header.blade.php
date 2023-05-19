@@ -25,7 +25,7 @@
                            <!-- <a class="nav-link" href="/article">Blog</a> -->
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="/checkout">Order</a>
+                           <a class="nav-link" href="/history">Order</a>
                         </li>
                         
                         <li class="nav-item">
