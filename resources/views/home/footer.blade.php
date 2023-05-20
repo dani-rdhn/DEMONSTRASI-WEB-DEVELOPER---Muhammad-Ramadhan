@@ -7,8 +7,8 @@
                         <a href="#"><img width="210" src="home/images/Threadly_logo.png" alt="#" /></a>
                       </div>
                       <div class="information_f">
-                        <p><strong>ADDRESS:</strong> 28 White tower, Street Name New York City, USA</p>
-                        <p><strong>TELEPHONE:</strong> +91 987 654 3210</p>
+                        <p><strong>ADDRESS:</strong> Jl Telekomunikasi No.1 Bojongsoang Kab. Bandung</p>
+                        <p><strong>TELEPHONE:</strong> +62 987 654 3210</p>
                         <p><strong>EMAIL:</strong> yourmain@gmail.com</p>
                       </div>
                    </div>
@@ -23,10 +23,10 @@
                         <ul>
                            <li><a href="#">Home</a></li>
                            <li><a href="#">About</a></li>
-                           <li><a href="#">Services</a></li>
-                           <li><a href="#">Testimonial</a></li>
-                           <li><a href="#">article</a></li>
-                           <li><a href="#">Contact</a></li>
+                           <li><a href="/article">Article</a></li>
+                           <li><a href="/product-page">Product</a></li>
+                           <li><a href="/history">Order</a></li>
+                           <li><a href="/show_cart">Cart</a></li>
                         </ul>
                      </div>
                   </div>
@@ -34,12 +34,8 @@
                      <div class="widget_menu">
                         <h3>Account</h3>
                         <ul>
-                           <li><a href="#">Account</a></li>
-                           <li><a href="#">Checkout</a></li>
-                           <li><a href="#">Login</a></li>
-                           <li><a href="#">Register</a></li>
-                           <li><a href="#">Shopping</a></li>
-                           <li><a href="#">Widget</a></li>
+                           <li><a href="/login">Login</a></li>
+                           <li><a href="/register">Register</a></li>
                         </ul>
                      </div>
                   </div>
@@ -49,7 +45,7 @@
                      <div class="widget_menu">
                         <h3>Newsletter</h3>
                         <div class="information_f">
-                          <p>Subscribe by our newsletter and get update protidin.</p>
+                          <p>Subscribe by our newsletter and get update.</p>
                         </div>
                         <div class="form_sub">
                            <form>
