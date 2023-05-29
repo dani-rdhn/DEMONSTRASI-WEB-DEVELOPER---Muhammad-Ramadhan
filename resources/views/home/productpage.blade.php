@@ -33,6 +33,13 @@
                   Our <span>products</span>
                </h2>
             </div>
+            <form action="/product-page/search" method="GET">
+               @csrf
+               <div class="input-group">
+                  <input type="search" style="width: 300px;" class="form-control rounded" placeholder="Cari Produk" aria-label="Search" aria-describedby="search-addon" name="search"/>
+                  <button type="submit" class="btn btn-outline-primary">search</button>
+               </div>
+            </form>
             <div class="row">
 
                 @foreach($product as $product)

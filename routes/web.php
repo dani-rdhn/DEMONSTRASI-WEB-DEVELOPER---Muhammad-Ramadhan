@@ -64,3 +64,4 @@ Route::get('/stripe/{totalprice}', 'App\Http\Controllers\HomeController@stripe')
 
 Route::post('stripe/{totalprice}', 'App\Http\Controllers\HomeController@stripePost')->name('stripe.post');
 
+Route::get('/product-page/search', 'App\Http\Controllers\HomeController@product_search');
