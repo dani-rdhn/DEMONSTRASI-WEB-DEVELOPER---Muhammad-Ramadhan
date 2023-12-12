@@ -34,7 +34,8 @@ Admin:
 -   Melihat list order
 
 e. Screen capture gambar skema project dari database
-f. Screen recorder demo penjelasan website yang dibua
+
+f. Screen recorder demo penjelasan website yang dibuat
 
 ## About Laravel
 
