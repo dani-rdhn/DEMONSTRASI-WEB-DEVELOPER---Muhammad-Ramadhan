@@ -10,8 +10,11 @@
 ## Project NetRent
 
 a. Nama Kelompok: NetRent
+
 b. Nama Team: NetRent
+
 c. Nama Project: Aplikasi penyewaan modem internet untuk traveling
+
 d. List Fitur
 
 User:
