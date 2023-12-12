@@ -11,7 +11,7 @@
       <meta name="description" content="" />
       <meta name="author" content="" />
       <link rel="shortcut icon" href="home/images/favicon.png" type="">
-      <title>Threadly</title>
+      <title>NetRent</title>
       <!-- bootstrap core css -->
       <link rel="stylesheet" type="text/css" href="home/css/bootstrap.css" />
       <!-- font awesome style -->
@@ -29,17 +29,17 @@
          <!-- end header section -->
          <!-- slider section -->
       <section class="h-100" style="background-color: #eee;">
-         <div class="container h-100 py-5">
+         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                <div class="col-10">
 
-               <div class="d-flex justify-content-between align-items-center mb-4">
+               <div class="mb-4 d-flex justify-content-between align-items-center">
                   <p style="color: #1D7A1B; font-size: 32px">Shopping Cart</p>
                </div>
                <?php $totalprice=0; ?>
                @foreach($cart as $cart)
-               <div class="card rounded-3 mb-4">
-                  <div class="card-body p-4">
+               <div class="mb-4 card rounded-3">
+                  <div class="p-4 card-body">
                      <div class="row d-flex justify-content-between align-items-center">
                      <div class="col-md-2 col-lg-2 col-xl-2">
                         <img
@@ -47,7 +47,7 @@
                            class="img-fluid rounded-3" alt="Cotton T-shirt">
                      </div>
                      <div class="col-md-3 col-lg-3 col-xl-3">
-                        <p class="lead fw-normal mb-2">{{$cart->product_title}}</p>
+                        <p class="mb-2 lead fw-normal">{{$cart->product_title}}</p>
                         <p><span class="text-muted">Quantity: </span>{{$cart->quantity}}</p>
                      </div>
                      <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
@@ -66,12 +66,6 @@
                      <p>Total Price : Rp{{$totalprice}}</p>
                   </div>
                </div>
-               <!-- <div class="card">
-                  <div class="card-body">
-                     <a href="{{url('order', $totalprice)}}"><button type="button" class="btn btn-warning btn-lg">Proceed to Pay</button></a>
-                     <a href="{{url('order', $totalprice)}}"><button type="button" class="btn btn-warning btn-lg">Proceed to Pay</button></a>
-                  </div>
-               </div> -->
                <div class="card">
                   <div class="card-body">
                      <div class="row">

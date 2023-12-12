@@ -12,7 +12,19 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule): void
     {
-        // $schedule->command('inspire')->hourly();
+        $schedule->call(function () {
+            $orders = Order::where('tenggat_waktu', '<', Carbon::now())
+                        ->where('status_pengembalian', 'belum dikembalikan')
+                        ->get();
+
+            foreach ($orders as $order) {
+                // Kurangkan stok produk dan tandai pesanan sebagai "sudah dikembalikan"
+                $product = Product::find($order->product_id);
+                $product->increment('quantity', $order->quantity);
+                
+                $order->update(['status_pengembalian' => 'sudah dikembalikan']);
+            }
+        })->hourly();
     }
 
     /**
@@ -24,4 +36,15 @@ class Kernel extends ConsoleKernel
 
         require base_path('routes/console.php');
     }
+
+    // app/Http/Kernel.php
+
+    protected $middlewareGroups = [
+        'web' => [
+            // ...
+            \App\Http\Middleware\VerifyCsrfToken::class,
+            // ...
+        ],
+    ];
+
 }

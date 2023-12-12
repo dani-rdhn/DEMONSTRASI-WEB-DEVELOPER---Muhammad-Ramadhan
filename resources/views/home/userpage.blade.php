@@ -11,7 +11,7 @@
       <meta name="description" content="" />
       <meta name="author" content="" />
       <link rel="shortcut icon" href="home/images/favicon.png" type="">
-      <title>Threadly</title>
+      <title>NetRent</title>
       <!-- bootstrap core css -->
       <link rel="stylesheet" type="text/css" href="home/css/bootstrap.css" />
       <!-- font awesome style -->
@@ -20,6 +20,7 @@
       <link href="home/css/style.css" rel="stylesheet" />
       <!-- responsive style -->
       <link href="home/css/responsive.css" rel="stylesheet" />
+      @vite('resources/css/app.css')
    </head>
    <body>
       <div class="hero_area">
@@ -42,12 +43,6 @@
       @include('home.product')
       <!-- end product section -->
 
-      <!-- subscribe section -->
-      @include('home.subscribe')
-      <!-- end subscribe section -->
-      <!-- client section -->
-      @include('home.client')
-      <!-- end client section -->
       <!-- footer start -->
       @include('home.footer')
       <!-- jQery -->

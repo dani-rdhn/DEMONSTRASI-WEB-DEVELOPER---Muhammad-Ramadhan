@@ -33,36 +33,23 @@
                   Our <span>products</span>
                </h2>
             </div>
-            <form action="/product-page/search" method="GET">
-               @csrf
-               <div class="input-group">
-                  <input type="search" style="width: 300px;" class="rounded form-control" placeholder="Cari Produk" aria-label="Search" aria-describedby="search-addon" name="search"/>
-                  <button type="submit" class="btn btn-outline-primary">search</button>
-               </div>
-            </form>
             <div class="row">
 
-                @foreach($product as $product)
+                @foreach($categories as $category)
 
                <div class="col-sm-6 col-md-4 col-lg-4">
                   <div class="box">
                      <div class="option_container">
                         <div class="options">
-                           <a href="{{url('product_details', $product->id)}}" class="option1">
-                           Product Detail
+                           <a href="{{ route('categories.show', $category) }}" class="option1">
+                           Look the product
                            </a>
                         </div>
                      </div>
-                     <div class="img-box">
-                        <img src="product/{{$product->image}}" alt="">
-                     </div>
                      <div class="detail-box">
                         <h5>
-                           {{$product->title}}
+                           {{$category->category_name}}
                         </h5>
-                        <h6>
-                           Rp{{$product->price}}
-                        </h6>
                      </div>
                   </div>
                </div>
@@ -70,7 +57,7 @@
                @endforeach
             
          </div>
-      </section>
+      </section>    
     </div>
 
     <!-- footer start -->

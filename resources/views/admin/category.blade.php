@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Threadly Admin</title>
+    <title>NetRent Admin</title>
     <!-- Required meta tags -->
     @include('admin.css')
     <style type="text/css">

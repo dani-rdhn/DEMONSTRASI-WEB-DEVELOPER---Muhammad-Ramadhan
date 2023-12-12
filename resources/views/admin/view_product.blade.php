@@ -23,6 +23,12 @@
         {
             color: #fcfcfc;
         }
+        .description-cell {
+            max-width: 300px; /* Adjust the max-width as needed */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     </style>
   </head>
   <body>
@@ -50,25 +56,23 @@
                                     <table class="table mb-0">
                                         <thead class="small text-uppercase bg-body">
                                             <tr>
-                                                <th>Product ID</th>
-                                                <th>Product</th>
-                                                <th>Date</th>
-                                                <th>Name</th>
-                                                <th>Amount</th>
-                                                <th>Status</th>
+                                                <th>Title</th>
+                                                <th>Desciption</th>
+                                                <th>Category</th>
+                                                <th>Quantity</th>
+                                                <th>Price</th>
+                                                <th>Image</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            @foreach($order as $order)
+                                            @foreach($product as $product)
                                             <tr class="align-middle">
-                                                <td>{{$order->id}}</td>
-                                                <td>{{$order->product_title}}</td>
-                                                <td>{{$order->created_at}}</td>
-                                                <td>{{$order->name}}</td>
-                                                <td>Rp.{{$order->price}}</td>
-                                                <td>
-                                                    <span class="badge fs-6 fw-normal bg-tint-success text-success">{{$order->payment_status}}</span>
-                                                </td>
+                                                <td>{{$product->title}}</td>
+                                                <td class="description-cell">{{$product->description}}</td>
+                                                <td>{{$product->category}}</td>
+                                                <td>{{$product->quantity}}</td>
+                                                <td>Rp.{{$product->price}}</td>
+                                                <td><img src="{{ asset($product->image) }}" alt="Product Image" style="max-width: 100px; height: auto;"></td>
                                             </tr>
                                             @endforeach
                                         </tbody>

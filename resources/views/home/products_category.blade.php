@@ -30,26 +30,22 @@
          <div class="container">
             <div class="heading_container heading_center">
                <h2>
-                  Our <span>products</span>
+                  Our <span>products</span> in {{ $category->category_name }}
                </h2>
             </div>
-            <form action="/product-page/search" method="GET">
-               @csrf
-               <div class="input-group">
-                  <input type="search" style="width: 300px;" class="rounded form-control" placeholder="Cari Produk" aria-label="Search" aria-describedby="search-addon" name="search"/>
-                  <button type="submit" class="btn btn-outline-primary">search</button>
-               </div>
-            </form>
             <div class="row">
 
-                @foreach($product as $product)
+                @foreach($products as $products)
 
                <div class="col-sm-6 col-md-4 col-lg-4">
                   <div class="box">
                      <div class="option_container">
                         <div class="options">
-                           <a href="{{url('product_details', $product->id)}}" class="option1">
+                           <a href="{{url('product_details', $products->id)}}" class="option1">
                            Product Detail
+                           </a>
+                           <a href="" class="option2">
+                           Buy Now
                            </a>
                         </div>
                      </div>
@@ -58,10 +54,10 @@
                      </div>
                      <div class="detail-box">
                         <h5>
-                           {{$product->title}}
+                           {{$products->title}}
                         </h5>
                         <h6>
-                           Rp{{$product->price}}
+                           Rp{{$products->price}}
                         </h6>
                      </div>
                   </div>

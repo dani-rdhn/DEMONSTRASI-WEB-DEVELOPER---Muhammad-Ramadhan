@@ -11,8 +11,9 @@
       <meta name="keywords" content="" />
       <meta name="description" content="" />
       <meta name="author" content="" />
+      <meta name="csrf-token" content="{{ csrf_token() }}">
       <link rel="shortcut icon" href="home/images/favicon.png" type="">
-      <title>Threadly</title>
+      <title>NetRent</title>
       <!-- bootstrap core css -->
       <link rel="stylesheet" type="text/css" href="home/css/bootstrap.css" />
       <!-- font awesome style -->
@@ -34,61 +35,50 @@
                 <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-lg-10 col-xl-8">
                     <div class="card" style="border-radius: 10px;">
-                    <div class="card-header px-4 py-5">
-                        <!-- <h5 class="text-muted mb-0">Thanks for your Order, <span style="color: #a8729a;">Anna</span>!</h5> -->
-                        <h5 class="text-muted mb-0" style="font-size: 24px; font-family: Montserrat;">Thanks for your Order!</h5>
+                    <div class="px-4 py-5 card-header">
+                        <!-- <h5 class="mb-0 text-muted">Thanks for your Order, <span style="color: #a8729a;">Anna</span>!</h5> -->
+                        <h5 class="mb-0 text-muted" style="font-size: 24px; font-family: Montserrat;">Thanks for your Order!</h5>
                     </div>
-                    <div class="card-body p-4">
-                        <div class="d-flex justify-content-between align-items-center mb-4">
-                        <p class="lead fw-normal mb-0" style="color: #a8729a;">Receipt</p>
-                        <!-- <p class="small text-muted mb-0">Receipt Voucher : 1KAU9-84UIL</p> -->
+                    <div class="p-4 card-body">
+                        <div class="mb-4 d-flex justify-content-between align-items-center">
+                        <p class="mb-0 lead fw-normal" style="color: #a8729a;">Receipt</p>
+                        <!-- <p class="mb-0 small text-muted">Receipt Voucher : 1KAU9-84UIL</p> -->
                         </div>
                         @foreach($order as $order)
-                        <div class="card shadow-0 border mb-2">
-                        
-                        <div class="card-body">
-                            <div class="row">
-                            <div class="col-md-3">
-                                <img src="product/{{$order->image}}"
-                                class="img-fluid" alt="Phone">
-                            </div>
-                            <div class="col-md-2 text-center d-flex justify-content-center align-items-center">
-                                <p class="text-muted mb-0 ">{{$order->product_title}}</p>
-                            </div>
-                            <div class="col-md-2 text-center d-flex justify-content-center align-items-center">
-                                <p class="text-muted mb-0 ">Qty: {{$order->quantity}}</p>
-                            </div>
-                            <div class="col-md-2 text-center d-flex justify-content-center align-items-center">
-                                <p class="text-muted mb-0 ">{{$order->payment_status}}</p>
-                            </div>
-                            <!-- <div class="col-md-2 text-center d-flex justify-content-center align-items-center">
-                                <p class="text-muted mb-0 small">Capacity: 64GB</p>
-                            </div> -->                        
-                            <div class="col-md-2 text-center d-flex justify-content-center align-items-center">
-                                <p class="text-muted mb-0 ">Rp.{{$order->price}}</p>
-                            </div>
-                            </div>
-                            <hr class="mb-4" style="background-color: #e0e0e0; opacity: 1;">
-                            <!-- <div class="row d-flex align-items-center">
-                            <div class="col-md-2">
-                                <p class="text-muted mb-0 small">Track Order</p>
-                            </div>
-                            <div class="col-md-10">
-                                <div class="progress" style="height: 6px; border-radius: 16px;">
-                                <div class="progress-bar" role="progressbar"
-                                    style="width: 65%; border-radius: 16px; background-color: #a8729a;" aria-valuenow="65"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="d-flex justify-content-around mb-1">
-                                <p class="text-muted mt-1 mb-0 small ms-xl-5">Out for delivary</p>
-                                <p class="text-muted mt-1 mb-0 small ms-xl-5">Delivered</p>
+                            <div class="mb-2 border card shadow-0">
+                                <div class="card-body">
+                                    <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="product/{{$order->image}}"
+                                        class="img-fluid" alt="Phone">
+                                    </div>
+                                    <div class="text-center col-md-2 d-flex justify-content-center align-items-center">
+                                        <p class="mb-0 text-muted ">{{$order->product_title}}</p>
+                                    </div>
+                                    <div class="text-center col-md-2 d-flex justify-content-center align-items-center">
+                                        <p class="mb-0 text-muted ">Qty: {{$order->quantity}}</p>
+                                    </div>
+                                    <div class="text-center col-md-2 d-flex justify-content-center align-items-center">
+                                        <p class="mb-0 text-muted ">{{$order->payment_status}}</p>
+                                    </div>
+                                    <div class="text-center col-md-2 d-flex justify-content-center align-items-center">
+                                        <p class="mb-0 text-muted ">{{$order->tenggat_waktu}}</p>
+                                    </div>
+                                    <div class="text-center col-md-2 d-flex justify-content-center align-items-center">
+                                        <button class="btn btn-primary" onclick="returnProduct('{{ $order->id }}')">Kembalikan</button>
+                                    </div>
+                                    <!-- <div class="text-center col-md-2 d-flex justify-content-center align-items-center">
+                                        <p class="mb-0 text-muted small">Capacity: 64GB</p>
+                                    </div> -->                        
+                                    <div class="text-center col-md-2 d-flex justify-content-center align-items-center">
+                                        <p class="mb-0 text-muted ">Rp.{{$order->price}}</p>
+                                    </div>
+                                    </div>
+                                    <hr class="mb-4" style="background-color: #e0e0e0; opacity: 1;">
                                 </div>
                             </div>
-                            </div> -->
-                        </div>
-                        </div>
                         @endforeach
-                        <!-- <div class="card shadow-0 border mb-4">
+                        <!-- <div class="mb-4 border card shadow-0">
                         
                         </div> -->
                     </div>
@@ -108,6 +98,27 @@
       <script src="home/js/bootstrap.js"></script>
       <!-- custom js -->
       <script src="home/js/custom.js"></script>
+      <script>
+            // Ambil token CSRF dari meta tag
+            var csrfToken = $('meta[name="csrf-token"]').attr('content');
+
+            function returnProduct(orderId) {
+                $.ajax({
+                    type: 'POST',
+                    url: '/return-order/' + orderId,
+                    data: {
+                        _token: csrfToken, // Sertakan token CSRF dalam data
+                    },
+                    success: function(response) {
+                        console.log(response);
+                        location.reload(); // Refresh halaman setelah berhasil
+                    },
+                    error: function(error) {
+                        console.log(error);
+                    }
+                });
+            }
+        </script>
 
        <!-- LightBox -->
     <div class="lightbox-wrapper">

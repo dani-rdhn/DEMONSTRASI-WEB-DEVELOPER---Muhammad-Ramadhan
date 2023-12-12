@@ -1,7 +1,8 @@
 <header class="header_section">
             <div class="container">
                <nav class="navbar navbar-expand-lg custom_nav-container ">
-                  <a class="navbar-brand" href="/"><img width="120" src="home/images/Threadly_logo.png" alt="#" /></a>
+                  <!-- <a class="navbar-brand" href="/"><img width="120" src="home/images/Threadly_logo.png" alt="#" /></a> -->
+                  <h1 class="text-2xl text-black">NetRent</h1>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class=""> </span>
                   </button>
@@ -21,8 +22,7 @@
                            <a class="nav-link" href="/product-page">Products</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="/article">Article</a>
-                           <!-- <a class="nav-link" href="/article">Blog</a> -->
+                           <a class="nav-link" href="/categories">Category</a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" href="/history">Order</a>
@@ -84,11 +84,11 @@
                               </svg>
                            </a>
                         </li>
-                        <form class="form-inline">
-                           <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                        <!-- <form class="form-inline">
+                           <button class="my-2 btn my-sm-0 nav_search-btn" type="submit">
                            <i class="fa fa-search" aria-hidden="true"></i>
                            </button>
-                        </form>
+                        </form> -->
                         <!-- <li class="nav-item">
                            <a class="btn btn-primary" href="contact.html">Login</a>
                         </li> -->

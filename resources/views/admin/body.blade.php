@@ -1,18 +1,18 @@
-<div class="main-panel">
+<!-- <div class="main-panel">
           <div class="content-wrapper">
             <div class="row">
               <div class="col-12 grid-margin stretch-card">
                 <div class="card corona-gradient-card">
-                  <div class="card-body py-0 px-0 px-sm-3">
+                  <div class="px-0 py-0 card-body px-sm-3">
                     <div class="row align-items-center">
                       <div class="col-4 col-sm-3 col-xl-2">
                         <img src="admin/assets/images/dashboard/Group126@2x.png" class="gradient-corona-img img-fluid" alt="">
                       </div>
-                      <div class="col-5 col-sm-7 col-xl-8 p-0">
+                      <div class="p-0 col-5 col-sm-7 col-xl-8">
                         <h4 class="mb-1 mb-sm-0">Want even more features?</h4>
                         <p class="mb-0 font-weight-normal d-none d-sm-block">Check out our Pro version with 5 unique layouts!</p>
                       </div>
-                      <div class="col-3 col-sm-2 col-xl-2 pl-0 text-center">
+                      <div class="pl-0 text-center col-3 col-sm-2 col-xl-2">
                         <span>
                           <a href="https://www.bootstrapdash.com/product/corona-admin-template/" target="_blank" class="btn btn-outline-light btn-rounded get-started-btn">Upgrade to PRO</a>
                         </span>
@@ -30,7 +30,7 @@
                       <div class="col-9">
                         <div class="d-flex align-items-center align-self-start">
                           <h3 class="mb-0">$12.34</h3>
-                          <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
+                          <p class="mb-0 ml-2 text-success font-weight-medium">+3.5%</p>
                         </div>
                       </div>
                       <div class="col-3">
@@ -50,7 +50,7 @@
                       <div class="col-9">
                         <div class="d-flex align-items-center align-self-start">
                           <h3 class="mb-0">$17.34</h3>
-                          <p class="text-success ml-2 mb-0 font-weight-medium">+11%</p>
+                          <p class="mb-0 ml-2 text-success font-weight-medium">+11%</p>
                         </div>
                       </div>
                       <div class="col-3">
@@ -70,7 +70,7 @@
                       <div class="col-9">
                         <div class="d-flex align-items-center align-self-start">
                           <h3 class="mb-0">$12.34</h3>
-                          <p class="text-danger ml-2 mb-0 font-weight-medium">-2.4%</p>
+                          <p class="mb-0 ml-2 text-danger font-weight-medium">-2.4%</p>
                         </div>
                       </div>
                       <div class="col-3">
@@ -90,7 +90,7 @@
                       <div class="col-9">
                         <div class="d-flex align-items-center align-self-start">
                           <h3 class="mb-0">$31.53</h3>
-                          <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
+                          <p class="mb-0 ml-2 text-success font-weight-medium">+3.5%</p>
                         </div>
                       </div>
                       <div class="col-3">
@@ -110,22 +110,22 @@
                   <div class="card-body">
                     <h4 class="card-title">Transaction History</h4>
                     <canvas id="transaction-history" class="transaction-chart"></canvas>
-                    <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
+                    <div class="flex-row px-4 py-3 mt-3 rounded bg-gray-dark d-flex d-md-block d-xl-flex px-md-3 px-xl-4">
                       <div class="text-md-center text-xl-left">
                         <h6 class="mb-1">Transfer to Paypal</h6>
-                        <p class="text-muted mb-0">07 Jan 2019, 09:12AM</p>
+                        <p class="mb-0 text-muted">07 Jan 2019, 09:12AM</p>
                       </div>
-                      <div class="align-self-center flex-grow text-right text-md-center text-xl-right py-md-2 py-xl-0">
-                        <h6 class="font-weight-bold mb-0">$236</h6>
+                      <div class="flex-grow text-right align-self-center text-md-center text-xl-right py-md-2 py-xl-0">
+                        <h6 class="mb-0 font-weight-bold">$236</h6>
                       </div>
                     </div>
-                    <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
+                    <div class="flex-row px-4 py-3 mt-3 rounded bg-gray-dark d-flex d-md-block d-xl-flex px-md-3 px-xl-4">
                       <div class="text-md-center text-xl-left">
                         <h6 class="mb-1">Tranfer to Stripe</h6>
-                        <p class="text-muted mb-0">07 Jan 2019, 09:12AM</p>
+                        <p class="mb-0 text-muted">07 Jan 2019, 09:12AM</p>
                       </div>
-                      <div class="align-self-center flex-grow text-right text-md-center text-xl-right py-md-2 py-xl-0">
-                        <h6 class="font-weight-bold mb-0">$593</h6>
+                      <div class="flex-grow text-right align-self-center text-md-center text-xl-right py-md-2 py-xl-0">
+                        <h6 class="mb-0 font-weight-bold">$593</h6>
                       </div>
                     </div>
                   </div>
@@ -134,9 +134,9 @@
               <div class="col-md-8 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <div class="d-flex flex-row justify-content-between">
-                      <h4 class="card-title mb-1">Open Projects</h4>
-                      <p class="text-muted mb-1">Your data status</p>
+                    <div class="flex-row d-flex justify-content-between">
+                      <h4 class="mb-1 card-title">Open Projects</h4>
+                      <p class="mb-1 text-muted">Your data status</p>
                     </div>
                     <div class="row">
                       <div class="col-12">
@@ -147,14 +147,14 @@
                                 <i class="mdi mdi-file-document"></i>
                               </div>
                             </div>
-                            <div class="preview-item-content d-sm-flex flex-grow">
+                            <div class="flex-grow preview-item-content d-sm-flex">
                               <div class="flex-grow">
                                 <h6 class="preview-subject">Admin dashboard design</h6>
-                                <p class="text-muted mb-0">Broadcast web app mockup</p>
+                                <p class="mb-0 text-muted">Broadcast web app mockup</p>
                               </div>
-                              <div class="mr-auto text-sm-right pt-2 pt-sm-0">
+                              <div class="pt-2 mr-auto text-sm-right pt-sm-0">
                                 <p class="text-muted">15 minutes ago</p>
-                                <p class="text-muted mb-0">30 tasks, 5 issues </p>
+                                <p class="mb-0 text-muted">30 tasks, 5 issues </p>
                               </div>
                             </div>
                           </div>
@@ -164,14 +164,14 @@
                                 <i class="mdi mdi-cloud-download"></i>
                               </div>
                             </div>
-                            <div class="preview-item-content d-sm-flex flex-grow">
+                            <div class="flex-grow preview-item-content d-sm-flex">
                               <div class="flex-grow">
                                 <h6 class="preview-subject">Wordpress Development</h6>
-                                <p class="text-muted mb-0">Upload new design</p>
+                                <p class="mb-0 text-muted">Upload new design</p>
                               </div>
-                              <div class="mr-auto text-sm-right pt-2 pt-sm-0">
+                              <div class="pt-2 mr-auto text-sm-right pt-sm-0">
                                 <p class="text-muted">1 hour ago</p>
-                                <p class="text-muted mb-0">23 tasks, 5 issues </p>
+                                <p class="mb-0 text-muted">23 tasks, 5 issues </p>
                               </div>
                             </div>
                           </div>
@@ -181,14 +181,14 @@
                                 <i class="mdi mdi-clock"></i>
                               </div>
                             </div>
-                            <div class="preview-item-content d-sm-flex flex-grow">
+                            <div class="flex-grow preview-item-content d-sm-flex">
                               <div class="flex-grow">
                                 <h6 class="preview-subject">Project meeting</h6>
-                                <p class="text-muted mb-0">New project discussion</p>
+                                <p class="mb-0 text-muted">New project discussion</p>
                               </div>
-                              <div class="mr-auto text-sm-right pt-2 pt-sm-0">
+                              <div class="pt-2 mr-auto text-sm-right pt-sm-0">
                                 <p class="text-muted">35 minutes ago</p>
-                                <p class="text-muted mb-0">15 tasks, 2 issues</p>
+                                <p class="mb-0 text-muted">15 tasks, 2 issues</p>
                               </div>
                             </div>
                           </div>
@@ -198,14 +198,14 @@
                                 <i class="mdi mdi-email-open"></i>
                               </div>
                             </div>
-                            <div class="preview-item-content d-sm-flex flex-grow">
+                            <div class="flex-grow preview-item-content d-sm-flex">
                               <div class="flex-grow">
                                 <h6 class="preview-subject">Broadcast Mail</h6>
-                                <p class="text-muted mb-0">Sent release details to team</p>
+                                <p class="mb-0 text-muted">Sent release details to team</p>
                               </div>
-                              <div class="mr-auto text-sm-right pt-2 pt-sm-0">
+                              <div class="pt-2 mr-auto text-sm-right pt-sm-0">
                                 <p class="text-muted">55 minutes ago</p>
-                                <p class="text-muted mb-0">35 tasks, 7 issues </p>
+                                <p class="mb-0 text-muted">35 tasks, 7 issues </p>
                               </div>
                             </div>
                           </div>
@@ -215,14 +215,14 @@
                                 <i class="mdi mdi-chart-pie"></i>
                               </div>
                             </div>
-                            <div class="preview-item-content d-sm-flex flex-grow">
+                            <div class="flex-grow preview-item-content d-sm-flex">
                               <div class="flex-grow">
                                 <h6 class="preview-subject">UI Design</h6>
-                                <p class="text-muted mb-0">New application planning</p>
+                                <p class="mb-0 text-muted">New application planning</p>
                               </div>
-                              <div class="mr-auto text-sm-right pt-2 pt-sm-0">
+                              <div class="pt-2 mr-auto text-sm-right pt-sm-0">
                                 <p class="text-muted">50 minutes ago</p>
-                                <p class="text-muted mb-0">27 tasks, 4 issues </p>
+                                <p class="mb-0 text-muted">27 tasks, 4 issues </p>
                               </div>
                             </div>
                           </div>
@@ -239,15 +239,15 @@
                   <div class="card-body">
                     <h5>Revenue</h5>
                     <div class="row">
-                      <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                      <div class="my-auto col-8 col-sm-12 col-xl-8">
                         <div class="d-flex d-sm-block d-md-flex align-items-center">
                           <h2 class="mb-0">$32123</h2>
-                          <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
+                          <p class="mb-0 ml-2 text-success font-weight-medium">+3.5%</p>
                         </div>
                         <h6 class="text-muted font-weight-normal">11.38% Since last month</h6>
                       </div>
-                      <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
-                        <i class="icon-lg mdi mdi-codepen text-primary ml-auto"></i>
+                      <div class="text-center col-4 col-sm-12 col-xl-4 text-xl-right">
+                        <i class="ml-auto icon-lg mdi mdi-codepen text-primary"></i>
                       </div>
                     </div>
                   </div>
@@ -258,15 +258,15 @@
                   <div class="card-body">
                     <h5>Sales</h5>
                     <div class="row">
-                      <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                      <div class="my-auto col-8 col-sm-12 col-xl-8">
                         <div class="d-flex d-sm-block d-md-flex align-items-center">
                           <h2 class="mb-0">$45850</h2>
-                          <p class="text-success ml-2 mb-0 font-weight-medium">+8.3%</p>
+                          <p class="mb-0 ml-2 text-success font-weight-medium">+8.3%</p>
                         </div>
                         <h6 class="text-muted font-weight-normal"> 9.61% Since last month</h6>
                       </div>
-                      <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
-                        <i class="icon-lg mdi mdi-wallet-travel text-danger ml-auto"></i>
+                      <div class="text-center col-4 col-sm-12 col-xl-4 text-xl-right">
+                        <i class="ml-auto icon-lg mdi mdi-wallet-travel text-danger"></i>
                       </div>
                     </div>
                   </div>
@@ -277,15 +277,15 @@
                   <div class="card-body">
                     <h5>Purchase</h5>
                     <div class="row">
-                      <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                      <div class="my-auto col-8 col-sm-12 col-xl-8">
                         <div class="d-flex d-sm-block d-md-flex align-items-center">
                           <h2 class="mb-0">$2039</h2>
-                          <p class="text-danger ml-2 mb-0 font-weight-medium">-2.1% </p>
+                          <p class="mb-0 ml-2 text-danger font-weight-medium">-2.1% </p>
                         </div>
                         <h6 class="text-muted font-weight-normal">2.27% Since last month</h6>
                       </div>
-                      <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
-                        <i class="icon-lg mdi mdi-monitor text-success ml-auto"></i>
+                      <div class="text-center col-4 col-sm-12 col-xl-4 text-xl-right">
+                        <i class="ml-auto icon-lg mdi mdi-monitor text-success"></i>
                       </div>
                     </div>
                   </div>
@@ -302,7 +302,7 @@
                         <thead>
                           <tr>
                             <th>
-                              <div class="form-check form-check-muted m-0">
+                              <div class="m-0 form-check form-check-muted">
                                 <label class="form-check-label">
                                   <input type="checkbox" class="form-check-input">
                                 </label>
@@ -320,7 +320,7 @@
                         <tbody>
                           <tr>
                             <td>
-                              <div class="form-check form-check-muted m-0">
+                              <div class="m-0 form-check form-check-muted">
                                 <label class="form-check-label">
                                   <input type="checkbox" class="form-check-input">
                                 </label>
@@ -341,7 +341,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="form-check form-check-muted m-0">
+                              <div class="m-0 form-check form-check-muted">
                                 <label class="form-check-label">
                                   <input type="checkbox" class="form-check-input">
                                 </label>
@@ -362,7 +362,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="form-check form-check-muted m-0">
+                              <div class="m-0 form-check form-check-muted">
                                 <label class="form-check-label">
                                   <input type="checkbox" class="form-check-input">
                                 </label>
@@ -383,7 +383,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="form-check form-check-muted m-0">
+                              <div class="m-0 form-check form-check-muted">
                                 <label class="form-check-label">
                                   <input type="checkbox" class="form-check-input">
                                 </label>
@@ -404,7 +404,7 @@
                           </tr>
                           <tr>
                             <td>
-                              <div class="form-check form-check-muted m-0">
+                              <div class="m-0 form-check form-check-muted">
                                 <label class="form-check-label">
                                   <input type="checkbox" class="form-check-input">
                                 </label>
@@ -434,16 +434,16 @@
               <div class="col-md-6 col-xl-4 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <div class="d-flex flex-row justify-content-between">
+                    <div class="flex-row d-flex justify-content-between">
                       <h4 class="card-title">Messages</h4>
-                      <p class="text-muted mb-1 small">View all</p>
+                      <p class="mb-1 text-muted small">View all</p>
                     </div>
                     <div class="preview-list">
                       <div class="preview-item border-bottom">
                         <div class="preview-thumbnail">
                           <img src="assets/images/faces/face6.jpg" alt="image" class="rounded-circle" />
                         </div>
-                        <div class="preview-item-content d-flex flex-grow">
+                        <div class="flex-grow preview-item-content d-flex">
                           <div class="flex-grow">
                             <div class="d-flex d-md-block d-xl-flex justify-content-between">
                               <h6 class="preview-subject">Leonard</h6>
@@ -457,7 +457,7 @@
                         <div class="preview-thumbnail">
                           <img src="assets/images/faces/face8.jpg" alt="image" class="rounded-circle" />
                         </div>
-                        <div class="preview-item-content d-flex flex-grow">
+                        <div class="flex-grow preview-item-content d-flex">
                           <div class="flex-grow">
                             <div class="d-flex d-md-block d-xl-flex justify-content-between">
                               <h6 class="preview-subject">Luella Mills</h6>
@@ -471,7 +471,7 @@
                         <div class="preview-thumbnail">
                           <img src="assets/images/faces/face9.jpg" alt="image" class="rounded-circle" />
                         </div>
-                        <div class="preview-item-content d-flex flex-grow">
+                        <div class="flex-grow preview-item-content d-flex">
                           <div class="flex-grow">
                             <div class="d-flex d-md-block d-xl-flex justify-content-between">
                               <h6 class="preview-subject">Ethel Kelly</h6>
@@ -485,7 +485,7 @@
                         <div class="preview-thumbnail">
                           <img src="assets/images/faces/face11.jpg" alt="image" class="rounded-circle" />
                         </div>
-                        <div class="preview-item-content d-flex flex-grow">
+                        <div class="flex-grow preview-item-content d-flex">
                           <div class="flex-grow">
                             <div class="d-flex d-md-block d-xl-flex justify-content-between">
                               <h6 class="preview-subject">Herman May</h6>
@@ -514,13 +514,13 @@
                         <img src="assets/images/dashboard/img_6.jpg" alt="">
                       </div>
                     </div>
-                    <div class="d-flex py-4">
+                    <div class="py-4 d-flex">
                       <div class="preview-list w-100">
-                        <div class="preview-item p-0">
+                        <div class="p-0 preview-item">
                           <div class="preview-thumbnail">
                             <img src="assets/images/faces/face12.jpg" class="rounded-circle" alt="">
                           </div>
-                          <div class="preview-item-content d-flex flex-grow">
+                          <div class="flex-grow preview-item-content d-flex">
                             <div class="flex-grow">
                               <div class="d-flex d-md-block d-xl-flex justify-content-between">
                                 <h6 class="preview-subject">CeeCee Bass</h6>
@@ -548,7 +548,7 @@
                       <button class="add btn btn-primary todo-list-add-btn">Add</button>
                     </div>
                     <div class="list-wrapper">
-                      <ul class="d-flex flex-column-reverse text-white todo-list todo-list-custom">
+                      <ul class="text-white d-flex flex-column-reverse todo-list todo-list-custom">
                         <li>
                           <div class="form-check form-check-primary">
                             <label class="form-check-label">
@@ -663,15 +663,15 @@
           </div>
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
-          <footer class="footer">
+          <!-- <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
+              <span class="text-center text-muted d-block text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
+              <span class="float-none mt-1 text-center float-sm-right d-block mt-sm-0"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
             </div>
           </footer>
           <!-- partial -->
         </div>
         <!-- main-panel ends -->
-      </div>
+      </div> -->
       <!-- page-body-wrapper ends -->
-    </div>
+    </div> -->

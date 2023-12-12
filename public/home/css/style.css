@@ -69,7 +69,7 @@ h2 {
 }
 
 .heading_container h2 span {
-    color: #6ba90a;
+    color: #094b7d;
 }
 
 .heading_container p {
@@ -169,12 +169,12 @@ a:focus {
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link,
 .custom_nav-container .navbar-nav .nav-item.active .nav-link {
     /* color: #f7444e; */
-    color: #0e8952;
+    color: #0e5489;
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link svg,
 .custom_nav-container .navbar-nav .nav-item.active .nav-link svg {
-    fill: #0e8952;
+    fill: #0e5489;
 }
 
 .custom_nav-container .nav_search-btn {
@@ -285,7 +285,7 @@ a:focus {
 }
 
 .slider_section .detail-box h1 span {
-    color: #0e8952;
+    color: #0e5489;
 }
 
 .slider_section .detail-box p {
@@ -481,14 +481,14 @@ a:focus {
 }
 
 .product_section .options .option1 {
-    background-color: #6ba90a;
-    border: 1px solid #6ba90a;
+    background-color: #0a69a9;
+    border: 1px solid #0a69a9;
     color: #ffffff;
 }
 
 .product_section .options .option1:hover {
     background-color: transparent;
-    color: #6ba90a;
+    color: #0a69a9;
 }
 
 .product_section .options .option2 {
@@ -1302,7 +1302,7 @@ button:hover,
     font-size: 14px;
     text-align: center;
     border-radius: 25px;
-    background-color: #6ba90a;
+    background-color: #0a69a9;
     opacity: 0;
     visibility: hidden;
     transition: 0.2s linear, visibility 0.3s linear;
@@ -1368,7 +1368,7 @@ button:hover,
     width: 100%;
     color: white;
     padding: 15px 20px;
-    background-color: #6ba90a;
+    background-color: #0a69a9;
 }
 
 .cart-list .cart-item {
@@ -1544,7 +1544,7 @@ button:hover,
 }
 
 .thumbs-wrapper > div.active {
-    border-color: #6ba90a;
+    border-color: #0a69a9;
 }
 
 .thumbs-wrapper > div:hover::after,
@@ -1589,7 +1589,7 @@ button:hover,
 
 .product-details-wrapper .product-brabd {
     font-size: 14px;
-    color: #6ba90a;
+    color: #0a69a9;
     letter-spacing: 1px;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -1628,7 +1628,7 @@ button:hover,
 
 .product-details-wrapper .current-price-wrapper .discount {
     background: #ffede0;
-    color: #6ba90a;
+    color: #0a69a9;
     padding: 5px 10px;
     border-radius: 6px;
 }
@@ -1693,7 +1693,7 @@ button:hover,
     color: white;
     padding: 15px 20px;
     margin-top: 15px;
-    background-color: #6ba90a;
+    background-color: #0a69a9;
     box-shadow: 0 15px 15px #ffeadb;
 }
 
@@ -1788,7 +1788,7 @@ button:hover,
 }
 
 .lightbox-wrapper .preview-image-wrapper .close-lightbox:hover svg path {
-    fill: #6ba90a;
+    fill: #0a69a9;
 }
 
 .lightbox-wrapper .preview-image-wrapper .close-lightbox img {

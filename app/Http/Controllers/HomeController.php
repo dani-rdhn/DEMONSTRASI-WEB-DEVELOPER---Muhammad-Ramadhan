@@ -142,6 +142,9 @@ class HomeController extends Controller
             $cart_id=$data->id;
             $cart=cart::find($cart_id);
             $cart->delete();
+
+            $product = Product::find($cart->product_id);
+            $product->decrement('quantity', $cart->quantity);
         }
 
         return redirect()->back();
@@ -235,16 +238,21 @@ class HomeController extends Controller
         return view('home.productpage', compact('product'));
     }   
 
-    // public function product_search(Request $request)
-    // {
-    //     if($request->has('search')) {
-    //         $search=product::where('title','LIKE','%'.$request->search.'%')->get();
-    //     }
-    //     else {
-    //         $search=product::all();
-    //     }
+    public function selesaiPinjam($order_id)
+    {
+        $order = Order::find($order_id);
 
-    //     // return view('home.productpage', compact('product'));
-    //     return view('home.productpage', ['product' => $search]);
-    // }
+        if (!$order) {
+            return redirect()->back()->with('error', 'Pesanan tidak ditemukan.');
+        }
+
+        // Kurangkan stok produk dan tandai pesanan sebagai "sudah dikembalikan"
+        $product = Product::find($order->product_id);
+        $product->increment('quantity', $order->quantity);
+
+        $order->update(['status_pengembalian' => 'sudah dikembalikan']);
+
+        return redirect()->back()->with('success', 'Pesanan berhasil dikembalikan.');
+    }
+
 }

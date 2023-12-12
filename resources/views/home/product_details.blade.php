@@ -56,7 +56,6 @@
 
               </div>
               <div class="product-details-wrapper">
-                <p class="product-brabd">Threadly</p>
                 <h1 class="product-title">{{$product->title}}</h1>
                 <p class="product-description">
                   {{$product->description}}
@@ -72,7 +71,7 @@
                 <form action="{{url('add_cart', $product->id)}}" class="add-to-cart-form" style="margin-top:12px; margin-left:-12px" method="post">
                   @csrf
                   <div class="col-md-2" style="margin-top:22px">
-                    <input type="number" name="quantity" value="1" min="1">
+                    <input type="number" name="quantity" value="1" min="1" max="2">
                   </div>
 
                   <button

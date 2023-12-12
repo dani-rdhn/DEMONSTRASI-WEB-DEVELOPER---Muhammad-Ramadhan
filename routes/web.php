@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use app\Http\Controllers\HomeController;
 use app\Http\Controllers\AdminController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\OrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -50,6 +53,7 @@ Route::get('/view_category', 'App\Http\Controllers\AdminController@view_category
 Route::post('/add_category', 'App\Http\Controllers\AdminController@add_category');
 Route::get('/delete_category/{id}', 'App\Http\Controllers\AdminController@delete_category');
 Route::get('/view_product', 'App\Http\Controllers\AdminController@view_product');
+Route::get('/view_product_list', 'App\Http\Controllers\AdminController@view_product_list');
 Route::post('/add_product', 'App\Http\Controllers\AdminController@add_product');
 // Route::get('/order', 'App\Http\Controllers\AdminController@order'); 
 Route::get('/order_product', 'App\Http\Controllers\AdminController@order_product');
@@ -65,3 +69,13 @@ Route::get('/stripe/{totalprice}', 'App\Http\Controllers\HomeController@stripe')
 Route::post('stripe/{totalprice}', 'App\Http\Controllers\HomeController@stripePost')->name('stripe.post');
 
 Route::get('/product-page/search', 'App\Http\Controllers\HomeController@product_search');
+
+Route::get('/categories', [CategoryController::class, 'index'])->name('categories.index');
+Route::get('/categories/{category}', [ProductController::class, 'showByCategory'])->name('categories.show');
+
+
+Route::get('/categories', 'App\Http\Controllers\CategoryController@index');
+Route::get('/categories/{category}', 'App\Http\Controllers\ProductController@show');
+Route::get('/categories/{category}', [ProductController::class, 'show'])->name('categories.show');
+
+Route::post('/return-order/{orderId}', [OrderController::class, 'returnOrder']);
