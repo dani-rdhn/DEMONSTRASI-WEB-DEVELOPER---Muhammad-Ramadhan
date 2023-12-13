@@ -62,7 +62,7 @@
                                         <p class="mb-0 text-muted ">{{$order->payment_status}}</p>
                                     </div>
                                     <div class="text-center col-md-2 d-flex justify-content-center align-items-center">
-                                        <p class="mb-0 text-muted ">{{$order->tenggat_waktu}}</p>
+                                        <p class="mb-0 text-muted ">{{$order->duedate}}</p>
                                     </div>
                                     <div class="text-center col-md-2 d-flex justify-content-center align-items-center">
                                         <button class="btn btn-primary" onclick="returnProduct('{{ $order->id }}')">Kembalikan</button>

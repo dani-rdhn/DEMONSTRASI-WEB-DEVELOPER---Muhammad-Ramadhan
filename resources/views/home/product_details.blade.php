@@ -70,9 +70,14 @@
                 
                 <form action="{{url('add_cart', $product->id)}}" class="add-to-cart-form" style="margin-top:12px; margin-left:-12px" method="post">
                   @csrf
-                  <div class="col-md-2" style="margin-top:22px">
+                  <div class="col-md-2" style="margin-top:2px">
+                    <a>Quantity</a>
                     <input type="number" name="quantity" value="1" min="1" max="2">
                   </div>
+                  <div class="col-md-2" style="margin-top:2px">
+                    <label for="duedate">Due Date</label>
+                    <input type="date" id="duedate" name="duedate" required>
+                </div>
 
                   <button
                     type="submit"

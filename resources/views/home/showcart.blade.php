@@ -34,7 +34,7 @@
                <div class="col-10">
 
                <div class="mb-4 d-flex justify-content-between align-items-center">
-                  <p style="color: #1D7A1B; font-size: 32px">Shopping Cart</p>
+                  <p style="color: #1D7A1B; font-size: 32px">Cart</p>
                </div>
                <?php $totalprice=0; ?>
                @foreach($cart as $cart)
@@ -49,6 +49,9 @@
                      <div class="col-md-3 col-lg-3 col-xl-3">
                         <p class="mb-2 lead fw-normal">{{$cart->product_title}}</p>
                         <p><span class="text-muted">Quantity: </span>{{$cart->quantity}}</p>
+                     </div>
+                     <div class="col-md-3 col-lg-3 col-xl-3">
+                        <p><span class="text-muted">duedate: </span>{{$cart->duedate}}</p>
                      </div>
                      <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
                         <h5 class="mb-0">Rp{{$cart->price}}</h5>

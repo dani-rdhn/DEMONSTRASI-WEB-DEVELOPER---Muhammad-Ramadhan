@@ -82,6 +82,7 @@ class HomeController extends Controller
             $cart->image = $product->image;
             $cart->product_id = $product->id;
             $cart->quantity = $request->quantity;
+            $cart->duedate = $request->duedate;
             $cart->save();
 
             return redirect()->back();
@@ -133,6 +134,7 @@ class HomeController extends Controller
             $order->quantity = $data->quantity;
             $order->image = $data->image;
             $order->product_id = $data->product_id;
+            $order->duedate = $data->duedate;
 
             $order->payment_status='Cash On Delivery';
             $order->delivery_status='processing';
