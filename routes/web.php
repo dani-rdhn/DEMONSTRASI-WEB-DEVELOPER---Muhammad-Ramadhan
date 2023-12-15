@@ -66,7 +66,7 @@ Route::get('/order', 'App\Http\Controllers\HomeController@order');
 // Route::get('/stripe_order', 'App\Http\Controllers\HomeController@stripe_order');
 Route::get('/stripe/{totalprice}', 'App\Http\Controllers\HomeController@stripe');
 
-Route::post('stripe/{totalprice}', 'App\Http\Controllers\HomeController@stripePost')->name('stripe.post');
+Route::post('stripe/{totalprice}', 'HomeController@stripePost')->name('stripe.post');
 
 Route::get('/product-page/search', 'App\Http\Controllers\HomeController@product_search');
 
@@ -79,3 +79,10 @@ Route::get('/categories/{category}', 'App\Http\Controllers\ProductController@sho
 Route::get('/categories/{category}', [ProductController::class, 'show'])->name('categories.show');
 
 Route::post('/return-order/{orderId}', [OrderController::class, 'returnOrder']);
+
+// Route::patch('/update-order-status/{id}', 'App\Http\Controllers\HomeController@updateOrderStatus')->name('updateOrderStatus');
+
+// Route::patch('/update-rent-status/{id}', 'App\Http\Controllers\HomeController@updateRentStatus')->name('updateRentStatus');
+
+Route::patch('/update-status/{id}', 'App\Http\Controllers\HomeController@updateStatus')->name('updateStatus');
+

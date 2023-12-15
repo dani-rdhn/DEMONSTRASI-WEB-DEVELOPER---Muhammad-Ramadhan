@@ -42,39 +42,46 @@
                     <div class="p-4 card-body">
                         <div class="mb-4 d-flex justify-content-between align-items-center">
                         <p class="mb-0 lead fw-normal" style="color: #a8729a;">Receipt</p>
-                        <!-- <p class="mb-0 small text-muted">Receipt Voucher : 1KAU9-84UIL</p> -->
                         </div>
                         @foreach($order as $order)
                             <div class="mb-2 border card shadow-0">
                                 <div class="card-body">
-                                    <div class="row">
-                                    <div class="col-md-3">
-                                        <img src="product/{{$order->image}}"
-                                        class="img-fluid" alt="Phone">
-                                    </div>
-                                    <div class="text-center col-md-2 d-flex justify-content-center align-items-center">
-                                        <p class="mb-0 text-muted ">{{$order->product_title}}</p>
-                                    </div>
-                                    <div class="text-center col-md-2 d-flex justify-content-center align-items-center">
-                                        <p class="mb-0 text-muted ">Qty: {{$order->quantity}}</p>
-                                    </div>
-                                    <div class="text-center col-md-2 d-flex justify-content-center align-items-center">
-                                        <p class="mb-0 text-muted ">{{$order->payment_status}}</p>
-                                    </div>
-                                    <div class="text-center col-md-2 d-flex justify-content-center align-items-center">
-                                        <p class="mb-0 text-muted ">{{$order->duedate}}</p>
-                                    </div>
-                                    <div class="text-center col-md-2 d-flex justify-content-center align-items-center">
-                                        <button class="btn btn-primary" onclick="returnProduct('{{ $order->id }}')">Kembalikan</button>
-                                    </div>
-                                    <!-- <div class="text-center col-md-2 d-flex justify-content-center align-items-center">
-                                        <p class="mb-0 text-muted small">Capacity: 64GB</p>
-                                    </div> -->                        
-                                    <div class="text-center col-md-2 d-flex justify-content-center align-items-center">
-                                        <p class="mb-0 text-muted ">Rp.{{$order->price}}</p>
-                                    </div>
-                                    </div>
-                                    <hr class="mb-4" style="background-color: #e0e0e0; opacity: 1;">
+                                    <form method="POST" action="{{ route('updateStatus', $order->id) }}">
+                                        @csrf
+                                        @method('patch')
+                                        <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="{{asset($order->image)}}"
+                                            class="img-fluid" alt="Phone">
+                                        </div>
+                                        <div class="text-center col-md-2 d-flex justify-content-center align-items-center">
+                                            <p class="mb-0 text-muted ">{{$order->product_title}}</p>
+                                        </div>
+                                        <div class="text-center col-md-2 d-flex justify-content-center align-items-center">
+                                            <p class="mb-0 text-muted ">Qty: {{$order->quantity}}</p>
+                                        </div>
+                                        <div class="text-center col-md-2 d-flex justify-content-center align-items-center">
+                                            <p class="mb-0 text-muted ">{{$order->rent_status}}</p>
+                                        </div>
+                                        <div class="text-center col-md-2 d-flex justify-content-center align-items-center">
+                                            <p class="mb-0 text-muted ">{{$order->duedate}}</p>
+                                        </div>
+                                        <div class="text-center col-md-2 d-flex justify-content-center align-items-center">
+                                            @if($order->delivery_status == 'processing')
+                                                <button type="submit" class="btn btn-primary">Kembalikan</button>
+                                            @else
+                                                <span class="inline-flex items-center bg-green-100 text-green-800 text-lg font-medium px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                                                    <span class="w-2 h-2 bg-green-500 rounded-full me-1"></span>
+                                                    Done
+                                                </span>
+                                            @endif
+                                        </div>      
+                                        <div class="text-center col-md-2 d-flex justify-content-center align-items-center">
+                                            <p class="mb-0 text-muted ">Rp.{{$order->price}}</p>
+                                        </div>
+                                        </div>
+                                        <hr class="mb-4" style="background-color: #e0e0e0; opacity: 1;">
+                                    </form>
                                 </div>
                             </div>
                         @endforeach

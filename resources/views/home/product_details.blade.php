@@ -34,7 +34,7 @@
               <div class="product-images-wrapper">
                 <div class="preview-image-wrapper">
                   <img
-                    src="product/{{$product->image}}"
+                    src="{{ asset($product->image) }}"
                     class="preview-image"
                     alt="Product Image"
                   />

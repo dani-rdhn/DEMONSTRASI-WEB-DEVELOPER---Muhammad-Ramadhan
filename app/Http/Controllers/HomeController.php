@@ -136,7 +136,7 @@ class HomeController extends Controller
             $order->product_id = $data->product_id;
             $order->duedate = $data->duedate;
 
-            $order->payment_status='Cash On Delivery';
+            $order->rent_status='Sedang Dipinjam';
             $order->delivery_status='processing';
 
             $order->save();
@@ -167,56 +167,6 @@ class HomeController extends Controller
         
     }
 
-    public function stripe($totalprice)
-    {
-        return view('home.stripe', compact('totalprice'));
-        // return redirect()->back();
-    }
-
-    public function stripePost(Request $request, $totalprice)
-    {
-        Stripe\Stripe::setApiKey(env('STRIPE_SECRET'));
-    
-        Stripe\Charge::create ([
-                "amount" => $totalprice * 100,
-                "currency" => "idr",
-                "source" => $request->stripeToken,
-                "description" => "Terima kasih untuk pembayarannya" 
-        ]);
-
-        $user=Auth::user();
-        $userid=$user->id;
-        $data=cart::where('user_id','=',$userid)->get();
-
-        foreach($data as $data)
-        {
-            $order = new order;
-            $order->name = $data->name;
-            $order->email = $data->email;
-            $order->phone = $data->phone;
-            $order->address = $data->address;
-            $order->user_id = $data->user_id;
-            $order->product_title = $data->product_title;
-            $order->price = $data->price;
-            $order->quantity = $data->quantity;
-            $order->image = $data->image;
-            $order->product_id = $data->product_id;
-
-            $order->payment_status='Card Paid';
-            $order->delivery_status='processing';
-
-            $order->save();
-
-            $cart_id=$data->id;
-            $cart=cart::find($cart_id);
-            $cart->delete();
-        }
-      
-        Session::flash('success', 'Payment successful!');
-              
-        return back();
-    }
-
     public function order_history() 
     {
         if(Auth::id())
@@ -240,21 +190,32 @@ class HomeController extends Controller
         return view('home.productpage', compact('product'));
     }   
 
-    public function selesaiPinjam($order_id)
-    {
-        $order = Order::find($order_id);
 
-        if (!$order) {
-            return redirect()->back()->with('error', 'Pesanan tidak ditemukan.');
+    // public function updateOrderStatus($id)
+    // {
+    //     $order = Order::findOrFail($id);
+    //     $order->update(['delivery_status' => 'done']);
+
+    //     // Redirect back or wherever appropriate
+    //     return redirect()->back();
+    // }
+
+    public function updateStatus($id)
+    {
+        $order = Order::findOrFail($id);
+
+        // Update delivery_status
+        if ($order->delivery_status == 'processing') {
+            $order->update(['delivery_status' => 'done']);
         }
 
-        // Kurangkan stok produk dan tandai pesanan sebagai "sudah dikembalikan"
-        $product = Product::find($order->product_id);
-        $product->increment('quantity', $order->quantity);
+        // Update rent_status
+        if ($order->rent_status == 'Sedang Dipinjam') {
+            $order->update(['rent_status' => 'Sudah Selesai']);
+        }
 
-        $order->update(['status_pengembalian' => 'sudah dikembalikan']);
-
-        return redirect()->back()->with('success', 'Pesanan berhasil dikembalikan.');
+        // Redirect back or wherever appropriate
+        return redirect()->back();
     }
 
 }

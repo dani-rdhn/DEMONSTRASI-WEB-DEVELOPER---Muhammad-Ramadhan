@@ -35,10 +35,6 @@
       @include('home.why')
       <!-- end why section -->
       
-      <!-- arrival section -->
-      @include('home.newarrival')
-      <!-- end arrival section -->
-      
       <!-- product section -->
       @include('home.product')
       <!-- end product section -->
