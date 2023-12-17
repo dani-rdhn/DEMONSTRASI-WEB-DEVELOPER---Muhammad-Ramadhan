@@ -13,6 +13,9 @@ use App\Models\Product;
 use App\Models\Cart;
 
 use App\Models\Order;
+// YourController.php
+use PDF;
+
 
 use Session;
 
@@ -218,4 +221,16 @@ class HomeController extends Controller
         return redirect()->back();
     }
 
+    public function exportPDF()
+    {
+        $users = User::all();
+
+        dd($users);
+
+        $pdf = PDF::loadView('your.pdf.view', compact('users'));
+
+        return $pdf->download('users.pdf');
+    }
+
 }
+

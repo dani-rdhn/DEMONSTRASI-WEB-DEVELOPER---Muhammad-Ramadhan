@@ -29,6 +29,14 @@ class User extends Authenticatable
         'phone',
         'address',
         'password',
+        'phone',
+        'nationality',
+        'other_nationality',
+        'tempat_lahir',
+        'tanggal_lahir',
+        'gender',
+        'religion',
+        'status_menikah',
     ];
 
     /**

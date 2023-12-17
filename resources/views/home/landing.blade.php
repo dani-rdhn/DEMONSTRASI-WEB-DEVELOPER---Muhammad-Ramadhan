@@ -1,22 +1,22 @@
 <section class="slider_section ">
    @vite('resources/css/app.css')
             <div class="slider_bg_box">
-               <img src="home/images/mifi_bg.png" alt="">
+               <img src="home/images/siswa_sma.png" alt="">
             </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-7 col-lg-6 ">
-                            <div class="detail-box" style="font-family: Montserrat;">
+                            <div class="text-white detail-box" style="font-family: Montserrat;">
                                 <h1>
-                                Jangan sampai putus jaringan!
+                                PMB SISWA SMA
                                 </h1>
                                 <p>
-                                Sewa modem internet untuk travelmu keliling dunia
+                                Daftarkan dirimu di SMAN 1 Karawang
                                 </p>
                                 <div class="btn-box">
-                                <a href="" class="btn1">
+                                <!-- <a href="" class="btn1">
                                 Sewa Sekarang
-                                </a>
+                                </a> -->
                                 </div>
                             </div>
                         </div>

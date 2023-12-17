@@ -57,6 +57,7 @@ Route::get('/view_product_list', 'App\Http\Controllers\AdminController@view_prod
 Route::post('/add_product', 'App\Http\Controllers\AdminController@add_product');
 // Route::get('/order', 'App\Http\Controllers\AdminController@order'); 
 Route::get('/order_product', 'App\Http\Controllers\AdminController@order_product');
+Route::get('/users', 'App\Http\Controllers\AdminController@users');
 
 Route::get('/product_details/{id}', 'App\Http\Controllers\HomeController@product_details');
 Route::post('/add_cart/{id}', 'App\Http\Controllers\HomeController@add_cart');
@@ -85,4 +86,9 @@ Route::post('/return-order/{orderId}', [OrderController::class, 'returnOrder']);
 // Route::patch('/update-rent-status/{id}', 'App\Http\Controllers\HomeController@updateRentStatus')->name('updateRentStatus');
 
 Route::patch('/update-status/{id}', 'App\Http\Controllers\HomeController@updateStatus')->name('updateStatus');
+
+// routes/web.php
+// Route::get('/export-pdf', 'App\Http\Controllers\HomeController@exportPDF')->name('exportPDF');
+Route::get('/users/pdf', 'App\Http\Controllers\AdminController@view_pdf')->name('view_pdf');
+
 

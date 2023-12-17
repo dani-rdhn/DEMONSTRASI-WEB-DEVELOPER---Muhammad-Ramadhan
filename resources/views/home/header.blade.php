@@ -2,7 +2,7 @@
             <div class="container">
                <nav class="navbar navbar-expand-lg custom_nav-container ">
                   <!-- <a class="navbar-brand" href="/"><img width="120" src="home/images/Threadly_logo.png" alt="#" /></a> -->
-                  <h1 class="text-2xl text-black">NetRent</h1>
+                  <h1 class="text-2xl text-black">PMB SMAN 1 Karawang</h1>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class=""> </span>
                   </button>
@@ -18,7 +18,7 @@
                               <li><a href="/testimonial">Testimonial</a></li>
                            </ul>
                         </li> -->
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                            <a class="nav-link" href="/product-page">Products</a>
                         </li>
                         <li class="nav-item">
@@ -26,10 +26,10 @@
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" href="/history">History</a>
-                        </li>
+                        </li> -->
                         
                         <li class="nav-item">
-                           <a class="nav-link" href="{{url('show_cart')}}">
+                           <!-- <a class="nav-link" href="{{url('show_cart')}}">
                               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                                  <g>
                                     <g>
@@ -82,7 +82,7 @@
                                  <g>
                                  </g>
                               </svg>
-                           </a>
+                           </a> -->
                         </li>
                         <!-- <form class="form-inline">
                            <button class="my-2 btn my-sm-0 nav_search-btn" type="submit">

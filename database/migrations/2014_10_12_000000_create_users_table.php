@@ -20,6 +20,13 @@ return new class extends Migration
             $table->string('address')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->enum('nationality', ['WNI_asli', 'WNI_keturunan', 'other'])->default('WNI_asli');
+            $table->string('other_nationality')->nullable();
+            $table->string('tempat_lahir')->nullable();
+            $table->date('tanggal_lahir')->nullable();
+            $table->enum('gender', ['male', 'female'])->nullable();
+            $table->string('religion')->nullable();
+            $table->enum('status_menikah', ['single', 'married'])->nullable();
             $table->rememberToken();
             $table->foreignId('current_team_id')->nullable();
             $table->string('profile_photo_path', 2048)->nullable();
