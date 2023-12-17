@@ -9,33 +9,9 @@
 
 ## Project NetRent
 
-a. Nama Kelompok: NetRent
+Muhammad Ramadhan Muttaqien
 
-b. Nama Team: NetRent
-
-c. Nama Project: Aplikasi penyewaan modem internet untuk traveling
-
-d. List Fitur
-
-User:
-
--   Registrasi dan Login
--   Melihat list produk modem
--   Menyewa modem
--   Pembayaran COD maupun kartu debit
--   Melihat order yang telah dibuat
-
-Admin:
-
--   Registrasi dan Login
--   Menambah produk
--   Melihat produk
--   Menambah daftar kategori
--   Melihat list order
-
-e. Screen capture gambar skema project dari database
-
-f. Screen recorder demo penjelasan website yang dibuat
+Nama Project: Aplikasi PMB
 
 ## About Laravel
 
